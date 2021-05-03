@@ -1,3 +1,3 @@
 export const ROOT_URL = {
-  googleAPI: ''
+  googleAPI: 'https://www.googleapis.com/books/v1/'
 }

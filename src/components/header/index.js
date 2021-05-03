@@ -2,7 +2,8 @@
 import {
   HeaderContainer,
   SearchSection,
-  InitialSection
+  InitialSection,
+  GoogleWrapper
 } from './styles'
 
 import { Search } from '../../assets/svgs/search'
@@ -12,8 +13,11 @@ export const Header = () => {
   return (
     <HeaderContainer>
       <InitialSection>
-        <Logo />
-        Google Livros <Search />
+        <GoogleWrapper>
+          <Logo />
+        Google Livros
+        </GoogleWrapper>
+        <Search />
       </InitialSection>
 
       <SearchSection>
