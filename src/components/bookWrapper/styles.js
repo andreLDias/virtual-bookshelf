@@ -14,6 +14,7 @@ export const Thumbnail = styled.div`
   background-image: url(${({ img }) => img});
   background-size: 90px 120px;
   border-radius: 0px 10px 10px 0px;
+  cursor: pointer;
 `
 
 export const Title = styled.div`

@@ -1,8 +1,10 @@
 import styled from 'styled-components'
 
-export const HeaderContainer = styled.div``
+export const HeaderContainer = styled.div`
+`
 
 export const GoogleWrapper = styled.div`
+  margin-left: 10px;
   width: 130px;
   margin-left: 15px;
   display: flex;
@@ -11,7 +13,7 @@ export const GoogleWrapper = styled.div`
   justify-content: space-between;
 `
 
-export const InitialSection = styled.div`
+export const Section = styled.div`
   background-color: #EFFAFF;
   height: 56px;
   display: flex;
@@ -20,4 +22,15 @@ export const InitialSection = styled.div`
   color: #86878B;
 `
 
-export const SearchSection = styled.div``
+export const SearchSection = styled.div`
+  height: 56px;
+`
+
+export const WrapperSearch = styled.div`
+  margin-right: 10px;
+`
+
+export const SearchCompletedText = styled.div`
+  width: 90%;
+  text-align: center;
+`
