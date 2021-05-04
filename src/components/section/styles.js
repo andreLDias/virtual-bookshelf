@@ -17,8 +17,8 @@ export const MoviesContainer = styled.div`
   margin-left: 10px;
   margin-right: 10px;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  flex-flow: row wrap
 `
 
 export const Title = styled.div`
@@ -26,4 +26,8 @@ export const Title = styled.div`
   margin-right: 10px;
 `
 
-export const Content = styled.div``
+export const Content = styled.div`
+  flex-basis: 10%;
+  box-sizing: border-box;
+  padding: 20px;
+`

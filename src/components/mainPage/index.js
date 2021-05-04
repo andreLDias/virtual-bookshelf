@@ -1,5 +1,5 @@
 
-import { Wrapper } from './styles'
+import { Wrapper, Br } from './styles'
 import { Header } from '../header'
 import { Section } from '../section'
 import { useMainPage } from './hooks'
@@ -29,7 +29,7 @@ export const MainPage = () => {
           <Section gender={'Ação'} />
         </>
       )}
-      {searchValue && startSearch && <Section gender={searchValue} />}
+      {searchValue && startSearch && <Section gender={searchValue} search />}
     </Wrapper>
   )
 }

@@ -5,3 +5,5 @@ export const Wrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
 `
+
+export const Br = styled.br``

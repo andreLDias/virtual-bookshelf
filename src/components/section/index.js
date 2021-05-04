@@ -9,9 +9,10 @@ import {
 } from './styles'
 
 
-export const Section = ({ gender, featured }) => {
-  const { books, windowDimensions } = useSection(gender)
-  const booksToShow = screenSizeHelper({ width: windowDimensions.width, books })
+export const Section = ({ gender, featured, search }) => {
+  const { books, windowDimensions } = useSection({ gender, search })
+  const width = windowDimensions.width
+  const booksToShow = screenSizeHelper({ width: width, books })
   return (
     <>
       {booksToShow && !!booksToShow.length && (
