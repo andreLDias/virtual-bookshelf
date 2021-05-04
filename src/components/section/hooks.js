@@ -28,15 +28,5 @@ export const useSection = (gender) => {
     return () => window.removeEventListener('resize', handleResize);
   }, [])
 
-  // useEffect(() => {
-  //   if (windowDimensions.width < 1200) {
-  //     setBooks(books.slice(4))
-  //   } else if (windowDimensions.width < 800) {
-  //     setBooks(books.slice(6))
-  //   } else if (windowDimensions.width < 500) {
-  //     setBooks(books.slice(9))
-  //   }
-  // }, [windowDimensions])
-
   return { books, windowDimensions }
 }

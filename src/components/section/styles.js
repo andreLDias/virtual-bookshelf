@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const SectionContainer = styled.div`
   background-color: ${({ featured }) => (featured ? '#47B7ED' : 'white')};
   font-family: Roboto;
-  font-weight: 500;
+  font-weight: ${({ featured }) => (featured ? '500' : '600')};
   font-size: 22px;
   line-height: 25px;
   color: ${({ featured }) => (featured ? 'white' : 'black')};

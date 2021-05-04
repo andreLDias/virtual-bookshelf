@@ -11,7 +11,7 @@ export const BookWrapper = ({ url, title, bookPreviewLink }) => {
   return (
     <BookContainer>
       <Thumbnail img={url || notFoundImg} onClick={() => window.open(bookPreviewLink, '_blank')} />
-      <Title>{title.length > 25 ? `${title.substring(0, 25)} [...]` : title}</Title>
+      <Title>{title.length > 25 ? `${title.substring(0, 25)}...` : title}</Title>
     </BookContainer >
   )
 }

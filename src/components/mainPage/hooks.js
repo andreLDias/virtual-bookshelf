@@ -9,7 +9,7 @@ export const useMainPage = () => {
   const handleStartSearch = (condition) => setStardSearch(condition)
 
   const handleKeyDownValue = async (event) => {
-    if (event.key === 'Enter') {
+    if (event.key === 'Enter' && searchValue) {
       handleStartSearch(true)
     } else {
       handleStartSearch(false)
