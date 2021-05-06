@@ -6,6 +6,9 @@ them on a react layout.
 The main page has a search button and by default displays four book categories.  
 When a book thumbnail is clicked, it leads you to google book preview.
 
+## Demo
+
+Demo link: https://virtual-bookshelf.vercel.app/
 ## Screenshots
 #### Desktop:
 ![iPhone 7](./src/assets/prints/desktop.png)
@@ -17,11 +20,7 @@ When a book thumbnail is clicked, it leads you to google book preview.
 ![iPhone 7](./src/assets/prints/search-desktop.png)
 #### Search page on iPhone 6/7/8+:
 ![iPhone 7](./src/assets/prints/search-iphone7plus.png)
-## Demo
 
-Demo link:
-
-  
 ## Tech Stack
 
 **Client:** 
