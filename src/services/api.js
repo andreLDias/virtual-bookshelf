@@ -29,7 +29,7 @@ api.interceptors.response.use(
 
 export const getBooks = async (query, max) => {
   try {
-    const response = await api.get(`volumes?q=${query}&startIndex=0&maxResults=${max}`)
+    const response = await api.get(`volumes?q=${query}&startIndex=1&maxResults=${max}`)
     return response
   } catch (err) {
     history.push('/')
