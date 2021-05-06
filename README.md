@@ -62,7 +62,7 @@ Demo link:
 
 - Create a custom API to store favorite/read books
 
-- 
+- Add tests
   
 ## Run Locally
 
