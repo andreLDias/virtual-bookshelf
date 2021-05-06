@@ -1,5 +1,5 @@
 
-import { Wrapper, Br } from './styles'
+import { Wrapper } from './styles'
 import { Header } from '../header'
 import { Section } from '../section'
 import { useMainPage } from './hooks'
