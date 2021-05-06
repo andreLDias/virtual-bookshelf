@@ -1,70 +1,98 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Virtual BookShelf
 
-## Available Scripts
+The project uses a public GoogleAPI (see API Reference) to get books and displays
+them on a react layout.  
+The main page has a search button and by default displays four book categories.  
+When a book thumbnail is clicked, it leads you to google book preview.
 
-In the project directory, you can run:
+## Screenshots
+#### Desktop:
+![iPhone 7](./src/assets/prints/desktop.png)
+#### iPhone 6/7/8:
+![iPhone 7](./src/assets/prints/iphone7.png)
+#### iPhone 6/7/8+
+![iPhone 7](./src/assets/prints/iphone7plus.png)
+#### Search page on desktop:
+![iPhone 7](./src/assets/prints/search-desktop.png)
+#### Search page on iPhone 6/7/8+:
+![iPhone 7](./src/assets/prints/search-iphone7plus.png)
+## Demo
 
-### `yarn start`
+Demo link:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  
+## Tech Stack
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**Client:** 
+* [ReactJs](https://reactjs.org/)
+* [material-ui/core](http://material-ui.com/)
+* [axios](https://github.com/axios/axios)
+* [styled-components](https://www.styled-components.com/)
 
-### `yarn test`
+## API Reference
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```http
+  RawURL: https://www.googleapis.com/books/
+```
 
-### `yarn build`
+#### Get all items
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```http
+  GET /v1/volumes?q=Query&startIndex=0&maxResults=10
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| Parameter    | Type     | Description                                     |
+| :----------- | :------- | :---------------------------------------------- |
+| `q`          | `string` | Search input.                                   |
+| `maxResults` | `string` | Number of max results. The highest value is 40. |
+| `startIndex` | `string` | The index of the first item.                    |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+  
+## Roadmap
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Add a 404 not found screen
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Use history to redirect to 404 screen
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Create a logIn/signUp screen
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Add a Loading Component
 
-## Learn More
+- Create a custom API to store favorite/read books
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- 
+  
+## Run Locally
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Clone the project virtual-bookshelf
 
-### Code Splitting
+```bash
+  git clone https://github.com/andreLDias/virtual-bookshelf
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Go to the project directory
 
-### Analyzing the Bundle Size
+```bash
+  cd virtual-bookshelf
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Install dependencies
 
-### Making a Progressive Web App
+```bash
+  yarn
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Start the front (when done loading, the default web browser will promp it)
 
-### Advanced Configuration
+```bash
+  yarn start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+  
+## Authors
 
-### Deployment
+- [@andreLDias](https://www.github.com/andreLDias)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  
