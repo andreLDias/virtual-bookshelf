@@ -27,6 +27,15 @@ api.interceptors.response.use(
   }
 )
 
+/**
+ * @name getBooks
+ * @description get books from google books public API
+ * @function
+ * @async
+ * @param {String} query 
+ * @param {Number} max 
+ * @returns {Object}
+ */
 export const getBooks = async (query, max) => {
   try {
     const response = await api.get(`volumes?q=${query}&startIndex=1&maxResults=${max}`)

@@ -8,6 +8,13 @@ export const useMainPage = () => {
 
   const handleStartSearch = (condition) => setStardSearch(condition)
 
+  /**
+   * @name handleKeyDownValue
+   * @description handle when the user clickes enter with something or nothing on the search bar
+   * @function
+   * @async
+   * @param {*} event 
+   */
   const handleKeyDownValue = async (event) => {
     if (event.key === 'Enter' && searchValue) {
       handleStartSearch(true)

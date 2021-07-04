@@ -1,3 +1,12 @@
+/**
+ * @name screenSizeHelper
+ * @description handle the amount of books based on screen width
+ * @function
+ * @param {Object} data
+ * @param {Number} data.Number
+ * @param {Array} data.books
+ * @returns 
+ */
 export const screenSizeHelper = ({ width, books }) => {
   let booksToShow
   if (width >= 1200) {
