@@ -8,7 +8,6 @@ import {
   Content
 } from './styles'
 
-
 export const Section = ({ gender, featured, search }) => {
   const { books, windowDimensions } = useSection({ gender, search })
   const width = windowDimensions.width
@@ -31,9 +30,7 @@ export const Section = ({ gender, featured, search }) => {
               )
             })}
           </MoviesContainer >
-          {!booksToShow && (
-            <Content>Request error</Content>
-          )}
+          {!booksToShow && <Content>Request error</Content>}
         </SectionContainer>
       )}
     </>

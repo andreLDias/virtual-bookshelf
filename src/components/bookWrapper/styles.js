@@ -25,4 +25,3 @@ export const Title = styled.div`
   align-self: center;
   color: black;
 `
-
